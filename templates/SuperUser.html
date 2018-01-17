@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Admin Home</title>
+      <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/main4.css') }}">
+  </head>
+  <body>
+  <header>
+  <h1 class="logo">Welcome Admin</h1>
+  </header>
+  <div class = "Top Rated">
+      <p><b>This page is can be used to update User Movie table. Note: This process takes 24 minutes.</b></p>
+      <p>Once updated success message will appear.</p>
+      <p><b>Please click below Run button to start updating.</b></p>
+  <div>
+      <form method="POST">
+      <p></p>
+      <input type="submit" onclick="" value="Run" class="button">
+      </form>
+      <p></p>
+       <input type="submit" onclick="location.href='{{ url_for('login') }}'" value="Cancel" class="button">
+  </div>
+      <p></p>
+      {% if msg %}
+      <p class = "message"><strong>Status:</strong> {{ msg }}</p>
+      {% endif %}
+      {% if dur %}
+      <p class = "duration"><strong>Duration:</strong> {{ dur }}</p>
+      {% endif %}
+      <p></p>
+      </div>
+  </body>
+</html>

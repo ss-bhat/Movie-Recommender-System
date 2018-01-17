@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Recommender System App</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main4.css') }}">
+  </head>
+  <body>
+  <header>
+  <h1 class = "logo">Movie Recommender System Login</h1>
+  </header>
+  <div class = "Fields">
+      <p></p>
+      <form method="POST">
+      <p style="color: #000066;"><b>User Id:</b><input type="number" placeholder="Numbers only" name='userid' ></p>
+      <p style="color: #000066;"><b>Password:</b> <input type="password" placeholder="Enter Password" name= 'password'></p>
+      <input type="submit" onclick="check(this.form)" class="button">
+  </form>
+      {% if error %}
+      <p class = "error"><strong>Login Error:</strong> {{ error }}</p>
+      {% endif %}
+  </div>
+  <p style="color: #000066;">Test User ID's:</p>
+  <li>200</li>
+  <li>500</li>
+  <li>681</li>
+  <li>100</li>
+  <li>800</li>
+  <li>300</li>
+  <p style="color: #000066;">Password for Test User Ids:123Swaroop</p>
+  <p></p>
+  <p style="color: #000066;">Admin Login for updating User Movie Table</p>
+  <p style="color: #000066;">Admin user Id: 7777</p>
+  <p style="color: #000066;">Password: 123Chopper</p>
+  </body>
+</html>

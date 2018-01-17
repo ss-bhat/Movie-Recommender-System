@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Movies Home</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main4.css') }}">
+  </head>
+  <body>
+  <header>
+  <h1 class= "logo">Welcome User: {{ value }}</h1>
+  </header>
+  <div class = "Top Rated">
+      <p style="color: #1B2631;"><font size="5"><b><u><i>Top Rated Movies</i></u></b></font></p>
+    {% for mv_l in tp_mv.itertuples(): %}
+      <li><b>{{ mv_l[1] }}</b></li>
+      {% endfor %}
+  </div>
+  <div>
+      <p style="color: #1B2631;"><font size="5"><b><u>Recommended Movies</u></b></font></p>
+        {% for rec in rc_mv.itertuples(): %}
+      <li><b>{{ rec[1] }}</b></li>
+        {% endfor %}
+      <p></p>
+      <input name="submit2" onclick="location.href = '/logout'" type="submit" value="log out" class="button">
+  </div>
+  </body>
+</html>

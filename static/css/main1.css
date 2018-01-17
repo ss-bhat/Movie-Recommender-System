@@ -1,0 +1,38 @@
+header {
+  background-color: #003399;
+  height: 50px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 20px;
+}
+header h1.logo {
+  margin: 5;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+  }
+
+body{
+background-image:url('film2.jpg');
+background-position: center;
+background-size: cover;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+li {
+  color: #000066;
+}
