@@ -1,6 +1,6 @@
 # Movie-Recommender-System
 
-Note: "All new ideas technisques for efficient codings are welcome." Thanks
+Note: "All new ideas/techniques welcome." Thanks
 
 This uses memory based collaborative filtering technique.
 
