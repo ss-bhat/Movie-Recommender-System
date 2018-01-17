@@ -18,7 +18,7 @@ header h1.logo:hover {
   }
 
 body{
-background-image:image-path('film2.jpg');
+background-image:image-url("https://www.hdwallpapers.in/walls/2015_minions-wide.jpg");
 background-position: center;
 background-size: cover;
 }
