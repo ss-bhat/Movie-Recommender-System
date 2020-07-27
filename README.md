@@ -50,4 +50,4 @@ Front End:
 
 * Home page, contains Top rated and Recommended movies for a given user id.
 
-* Admin page can be used to update user movie table. Admin pwd:123Chopper
+* Admin page can be used to update user movie table. Admin pwd:(check the code)
